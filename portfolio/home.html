@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mohamed Dhakeer | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    var typed = new Typed("#typing", {
+        strings: [
+            "Mohamed Dhakeer",
+            "CSE Student",
+            "Java Developer",
+            "Web Developer"
+        ],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+    });
+    // Navabar
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href'))
+                .scrollIntoView({
+                    behavior: 'smooth'
+                });
+        });
+    });
+</script>
+
+<body>
+
+    <header>
+        <h1>Mohamed Dhakeer</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="profilepic.jpeg" alt="Mohamed Dhakeer N">
+        <h2>I am <span id="typing"></span></h2>
+        <h2>Computer Science Engineering Student | Java & Front-End Developer</h2>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated Computer Science and Engineering student with a strong interest in Java development and
+            modern web technologies. I enjoy building responsive and user-friendly applications that solve real-world
+            problems.
+
+            During my internship and academic journey, I have gained practical experience in Java (OOP, Collections,
+            Exception Handling) and front-end development using HTML, CSS, and JavaScript. I focus on writing clean,
+            efficient, and maintainable code while continuously improving my technical skills.
+
+            I am currently seeking opportunities where I can contribute as a Java Developer or Front-End Developer and
+            grow as a professional software engineer.
+        </p>
+        <h2>Career Objective</h2>
+        <p>
+            To begin my career as a Software Developer in a growth-oriented organization where I can apply my
+            programming skills, enhance my technical knowledge, and contribute to impactful software solutions.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Java (OOP, Collections, Exception Handling)</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Front-End development</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Responsive Web Design</li>
+                    </li>UI/UX Design Principles</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>Eclipse</li>
+                    <li>MYSQL</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <p>Developed a responsive personal portfolio website to showcase projects, skills, and contact details.
+                    Designed clean UI with smooth navigation and mobile-friendly layout.</p>
+            </div>
+
+            <div class="card">
+                <h3>E-Commerce Web Page</h3>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <p>Built a modern and responsive e-commerce webpage with structured product listings, interactive
+                    components, and optimized layout for better user experience.</p>
+            </div>
+
+            <div class="card">
+                <h3>Geo-Honeypot Intrusion Detection System<h4 color="yellow">(In Progress)</h4>
+                </h3>
+                <p><strong>Technologies:</strong> Python, Machine Learning</p>
+                <p>Developed a machine learning-based intrusion detection system using Random Forest, Gradient Boosting,
+                    and Logistic Regression to detect cyber attacks.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+
+        <div class="resume-content">
+
+            <h3>Education</h3>
+            <p>
+                <strong>Bachelor of Technology (B.Tech)</strong><br>
+                Computer Science and Engineering<br>
+                
+            </p>
+
+            <h3>Core Strengths</h3>
+            <ul>
+                <li>Strong Problem-Solving Ability</li>
+                <li>Object-Oriented Programming (OOP) Concepts</li>
+                <li>Writing Clean, Efficient & Maintainable Code</li>
+                <li>Quick Learner with Adaptability to New Technologies</li>
+            </ul>
+
+            <a href="Mohamed_Dhakeer_resume.pdf" download class="btn">
+                Download Resume
+            </a>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-icons">
+
+            <a href="mailto:mohamedhdakeern@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="https://github.com/mohameddhakeern-cloud" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mohamed-dhakeer-0a22ab37b/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="tel:+919025750478">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+
+        </div>
+
+        <p>Chennai, India</p>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Mohamed Dhakeer | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
